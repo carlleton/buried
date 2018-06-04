@@ -35,3 +35,6 @@ import 'babel-polyfill'
 
 ### 在IE11中，template中不能使用ES6语法，即使使用polyfill也不行
 解决方法是把相应的处理放到computed或者filters中，这样polyfill可以处理它，template是字符串，IE11不能解析ES6的语法
+
+### canvas中svg的图片，可以正常绘制，但获取`getImageData`总是报`SecurityError`
+换成`.png`解决
