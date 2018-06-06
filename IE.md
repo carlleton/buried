@@ -38,3 +38,6 @@ import 'babel-polyfill'
 
 ### canvas中svg的图片，可以正常绘制，但获取`getImageData`总是报`SecurityError`
 换成`.png`解决
+
+### IE下put操作，如果只有一个url，数据为空时，提交会报`Unhandled promise rejection`
+将`put(url)`改为`put(url, {})`
