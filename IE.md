@@ -41,3 +41,6 @@ import 'babel-polyfill'
 
 ### IE下put操作，如果只有一个url，数据为空时，提交会报`Unhandled promise rejection`
 将`put(url)`改为`put(url, {})`
+
+### IE9+下svg的polyfill
+使用[svgxuse](https://github.com/Keyamoon/svgxuse)来兼容IE9+
