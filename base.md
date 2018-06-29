@@ -21,3 +21,6 @@ fileinput.onchange = function() {
 }
 ```
 来自：http://www.cnblogs.com/zoex/p/reset-file-input.html
+
+### 使用LESS时calc，请使用`~`来计算。其他语言转为LESS时也需要专门注意
+`calc(~"100% - 120px");`
