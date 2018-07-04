@@ -24,3 +24,7 @@ fileinput.onchange = function() {
 
 ### 使用LESS时calc，请使用`~`来计算。其他语言转为LESS时也需要专门注意
 `calc(~"100% - 120px");`
+
+### HTML5中input框type=number中取值问题
+当输入不是数字时，Chrome获取值为空，可判断`.validity.badInput`为true提示非法数值，Firefox和IE都能取到非数字的字符串
+来自：https://blog.csdn.net/yzj_work/article/details/26756015
