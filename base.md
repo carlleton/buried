@@ -28,3 +28,6 @@ fileinput.onchange = function() {
 ### HTML5中input框type=number中取值问题
 当输入不是数字时，Chrome获取值为空，可判断`.validity.badInput`为true提示非法数值，Firefox和IE都能取到非数字的字符串
 来自：https://blog.csdn.net/yzj_work/article/details/26756015
+
+### 正则表达式使用new Reg()，如果涉及中文会转换
+`let reg = new Reg("[\u4E00-\u9FA5]+")`和`let reg = /[\u4E00-\u9FA5]+/`，这两个`reg.test('中')`识别效果不一致，因为new Reg("")会将编码转换
